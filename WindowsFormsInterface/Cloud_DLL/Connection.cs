@@ -17,11 +17,20 @@ namespace Cloud_DLL
         public static MemoryStream ms = new MemoryStream(ms_buf);
         public static BinaryWriter bw = new BinaryWriter(ms);
 
+        /// <summary>
+        /// Выполняет соединение с сервером
+        /// </summary>
+        /// <param name="IP_Adress"></param>
+        /// <param name="Port_Number"></param>
         public static void Connect(String IP_Adress, int Port_Number)
         {
             socket.Connect(IP_Adress, Port_Number);
         }
 
+        /// <summary>
+        /// Посылает файл на сервер через открытый сокет
+        /// </summary>
+        /// <param name="Path">Полное имя файла</param>
         public static void SendFile(String Path)
         {
             FileStream FS = new FileStream(Path, FileMode.Open);

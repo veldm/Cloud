@@ -24,7 +24,8 @@ namespace WindowsFormsInterface
         public Form1()
         {
             InitializeComponent();
-            MaterialSkinManager.Instance.Theme = MaterialSkinManager.Themes.LIGHT;            
+            MaterialSkinManager.Instance.Theme = MaterialSkinManager.Themes.LIGHT;
+            #region Подключение к серверу и отображение состояния
             try
             {
                 FileStream FS = new FileStream("Config.json", FileMode.Open);
@@ -86,6 +87,7 @@ namespace WindowsFormsInterface
                 ConnectionStateLabel.Text = $"Сервер {config.IP_Adress}:{config.Port_Number} успешно подключен";
             }
             else config = new Config();
+            #endregion Подключение к серверу и отображение состояния
         }
 
         private void ConnectButton_Click(object sender, EventArgs e)
@@ -162,6 +164,11 @@ namespace WindowsFormsInterface
             else config.Port_Number = h;
         }
 
+        /// <summary>
+        /// Загрузка отдельного файла
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UploadFileButton_Click(object sender, EventArgs e)
         {
             OpenFileDialog fd = new OpenFileDialog();
