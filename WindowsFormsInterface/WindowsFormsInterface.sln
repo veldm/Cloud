@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsInterface", "Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud_DLL", "Cloud_DLL\Cloud_DLL.csproj", "{1935C098-86CD-4D5B-BA90-CDFD84C4715A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebugConsole", "DebugConsole\DebugConsole.csproj", "{BBCE535D-C107-4AE2-A01B-A1C227F61E3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1935C098-86CD-4D5B-BA90-CDFD84C4715A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1935C098-86CD-4D5B-BA90-CDFD84C4715A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1935C098-86CD-4D5B-BA90-CDFD84C4715A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBCE535D-C107-4AE2-A01B-A1C227F61E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBCE535D-C107-4AE2-A01B-A1C227F61E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBCE535D-C107-4AE2-A01B-A1C227F61E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBCE535D-C107-4AE2-A01B-A1C227F61E3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

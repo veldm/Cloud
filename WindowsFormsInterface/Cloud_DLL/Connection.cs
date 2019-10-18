@@ -37,6 +37,7 @@ namespace Cloud_DLL
             FileInfo FI = new FileInfo(Path);
             Byte[] buf = new Byte[FI.Length];
             FS.Read(buf, 0, buf.Length);
+            //bw.Write((Int32)0);
             bw.Write(FI.Name);
             bw.Write((Int64)FI.Length);
             bw.Write(buf);

@@ -29,8 +29,6 @@ namespace Server
                 cs.Receive(ms_buf);
                 String Name = br.ReadString();
                 int Length = (int)br.ReadInt64();
-                //Byte[] buf = new Byte[Length];
-                //br.Read(buf, 0, buf.Length);
                 Byte[] buf = br.ReadBytes(Length);
                 FileStream FS = new FileStream($"C:\\Users\\Dmitry\\Desktop\\{Name}", FileMode.Create);
                 FS.Write(buf, 0, Length);
